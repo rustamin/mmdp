@@ -1,0 +1,15 @@
+<%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
+  <%= f.input :model_persamaan, label:"Apakah metode peramalan yang akan anda gunakan  menggunakan model matematis?
+  " %>
+  <%= f.input :data_historis, label: "Apakah metode peramalan yang akan anda gunakan menggunakan data historis?
+  " %>
+  <%= f.input :variable, label: "Apakah metode peramalan yang akan anda gunakan menggunakan variabel-variabel untuk meramalkan permintaan?
+  " %>
+  <%= f.input :intuisi, label: "Apakah metode peramalan yang akan anda gunakan menggunakan intuisi, pengalaman pribadi, dan berdasarkan pendapat dari peramal?
+  " %>
+  <%= f.input :subjektif, label: "Apakah metode peramalan yang akan anda gunakan menggunakan bersifat subjektif?
+  " %>
+  <div class="form-actions">
+    <%= f.button :submit, "Lanjut!" %>
+  </div>
+<% end %>

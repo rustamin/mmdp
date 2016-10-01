@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  scope "mataharinyas/:matahari_id" do
+    resources :question_steps
+  end
+
   resources :mataharinyas
+  # resources :question_steps
+
   root 'static_pages#home'
 
   get  '/regresi_linier',    to: 'static_pages#regresi_linier'

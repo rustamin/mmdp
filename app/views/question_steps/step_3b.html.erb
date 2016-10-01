@@ -1,0 +1,20 @@
+<%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
+
+<%= f.input :populasi_objek, label: "Apakah metode peramalan yang akan anda gunakan mencakup seluruh populasi objek yang diteliti?
+" %>
+<%= f.input :banyak_staff, label: "Apakah metode peramalan yang akan anda gunakan melibatkan banyak pihak (staff, enumerator, dan ahli)?
+" %>
+<%= f.input :kemampuan_analisis, label: "Apakah metode peramalan yang akan anda lakukan membutuhkan kemampuan analisis dari kelompok ahli?
+" %>
+<%= f.input :wawancara_langsung, label: "Apakah metode peramalan yang akan anda gunakan membutuhkan wawancara langsung ke masyarakat?
+" %>
+<%= f.input :opini_masyarakat, label: "Apakah metode peramalan yang akan anda gunakan berorientasi pada opini masyarakat?
+" %>
+<%= f.input :waktu_singkat, label: "Apakah metode peramalan yang anda akan gunakan membutuhkan waktu yang ccenderung lebih singkat?
+" %>
+<%= f.input :sebagian_objek, label: "Apakah metode peramalan yang akan anda gunakan mencakup sebagian  objek (sampel) yang diteliti?
+" %>
+<div class="form-actions">
+  <%= f.button :submit, "Lanjut!" %>
+</div>
+<% end %>

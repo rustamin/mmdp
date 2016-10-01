@@ -28,7 +28,7 @@ class MataharinyasController < ApplicationController
 
     respond_to do |format|
       if @mataharinya.save
-        format.html { redirect_to @mataharinya, notice: 'Mataharinya was successfully created.' }
+        format.html { redirect_to question_steps_path(@mataharinya) }
         format.json { render :show, status: :created, location: @mataharinya }
       else
         format.html { render :new }
@@ -69,6 +69,11 @@ class MataharinyasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mataharinya_params
-      params.require(:mataharinya).permit(:model_persamaan, :data_historis, :variable, :intuisi, :subjektif, :waktu, :periodisasi, :variabel_bebas, :kuesioner, :alat_interview, :uji_coba, :dua_variabel_keputusan, :linier_programming, :populasi_objek, :banyak_staff, :kemampuan_analisis, :wawancara_langsung, :opini_masyarakat, :waktu_singkat, :sebagian_objek, :imbalan_koresponden, :memperagakan_kegiatan, :praktek)
+      params.require(:mataharinya).permit(:judul, :model_persamaan, :data_historis,
+      :variable, :intuisi, :subjektif, :waktu, :periodisasi, :variabel_bebas,
+      :kuesioner, :alat_interview, :uji_coba, :dua_variabel_keputusan, :linier_programming,
+      :garis_tren, :garis_lurus, :populasi_objek, :banyak_staff, :kemampuan_analisis,
+      :wawancara_langsung, :opini_masyarakat, :waktu_singkat, :sebagian_objek,
+      :imbalan_koresponden, :memperagakan_kegiatan, :praktek)
     end
 end
