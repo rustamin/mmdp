@@ -1,0 +1,2 @@
+json.extract! mataharinya, :id, :model_persamaan, :data_historis, :variable, :intuisi, :subjektif, :waktu, :periodisasi, :variabel_bebas, :kuesioner, :alat_interview, :uji_coba, :dua_variabel_keputusan, :linier_programming, :populasi_objek, :banyak_staff, :kemampuan_analisis, :wawancara_langsung, :opini_masyarakat, :waktu_singkat, :sebagian_objek, :imbalan_koresponden, :memperagakan_kegiatan, :praktek, :created_at, :updated_at
+json.url mataharinya_url(mataharinya, format: :json)

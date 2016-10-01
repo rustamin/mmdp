@@ -1,0 +1,1 @@
+json.partial! "mataharinyas/mataharinya", mataharinya: @mataharinya

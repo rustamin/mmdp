@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mataharinyas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model persamaan</th>
+      <th>Data historis</th>
+      <th>Variable</th>
+      <th>Intuisi</th>
+      <th>Subjektif</th>
+      <th>Waktu</th>
+      <th>Periodisasi</th>
+      <th>Variabel bebas</th>
+      <th>Kuesioner</th>
+      <th>Alat interview</th>
+      <th>Uji coba</th>
+      <th>Dua variabel keputusan</th>
+      <th>Linier programming</th>
+      <th>Populasi objek</th>
+      <th>Banyak staff</th>
+      <th>Kemampuan analisis</th>
+      <th>Wawancara langsung</th>
+      <th>Opini masyarakat</th>
+      <th>Waktu singkat</th>
+      <th>Sebagian objek</th>
+      <th>Imbalan koresponden</th>
+      <th>Memperagakan kegiatan</th>
+      <th>Praktek</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mataharinyas.each do |mataharinya| %>
+      <tr>
+        <td><%= mataharinya.model_persamaan %></td>
+        <td><%= mataharinya.data_historis %></td>
+        <td><%= mataharinya.variable %></td>
+        <td><%= mataharinya.intuisi %></td>
+        <td><%= mataharinya.subjektif %></td>
+        <td><%= mataharinya.waktu %></td>
+        <td><%= mataharinya.periodisasi %></td>
+        <td><%= mataharinya.variabel_bebas %></td>
+        <td><%= mataharinya.kuesioner %></td>
+        <td><%= mataharinya.alat_interview %></td>
+        <td><%= mataharinya.uji_coba %></td>
+        <td><%= mataharinya.dua_variabel_keputusan %></td>
+        <td><%= mataharinya.linier_programming %></td>
+        <td><%= mataharinya.populasi_objek %></td>
+        <td><%= mataharinya.banyak_staff %></td>
+        <td><%= mataharinya.kemampuan_analisis %></td>
+        <td><%= mataharinya.wawancara_langsung %></td>
+        <td><%= mataharinya.opini_masyarakat %></td>
+        <td><%= mataharinya.waktu_singkat %></td>
+        <td><%= mataharinya.sebagian_objek %></td>
+        <td><%= mataharinya.imbalan_koresponden %></td>
+        <td><%= mataharinya.memperagakan_kegiatan %></td>
+        <td><%= mataharinya.praktek %></td>
+        <td><%= link_to 'Show', mataharinya %></td>
+        <td><%= link_to 'Edit', edit_mataharinya_path(mataharinya) %></td>
+        <td><%= link_to 'Destroy', mataharinya, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mataharinya', new_mataharinya_path %>
