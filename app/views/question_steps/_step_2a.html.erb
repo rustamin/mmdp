@@ -1,11 +1,21 @@
-<%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
-<%= f.input :waktu, label: "Apakah metode peramalan yang akan anda gunakan mengutamakan fungsi dari waktu?
-" %>
-<%= f.input :periodisasi, label: "Apakah metode peramalan yang akan anda gunakan mengutamakan  nilai-nilai suatu variabel yang diatur secara periodesasi?
-" %>
-<%= f.input :variabel_bebas, label: "Apakah metode peramalan yang akan anda gunakan mengutamakan variasi variabel (variabel x (bebas) dan y (terikat))?
-" %>
-<div class="form-actions">
-  <%= f.button :submit, "Lanjut!" %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1 class="panel-title">Step 2 (づ｡◕‿‿◕｡)づ
+    (Silahkan pilih kriteria terkait dari salah satu grup)
+    </h1>
+  </div>
+  <div class="panel-body">
+    <%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
+    <%= f.input :waktu, label: "Apakah metode peramalan yang akan anda gunakan mengutamakan fungsi dari waktu?
+    " %>
+    <%= f.input :periodisasi, label: "Apakah metode peramalan yang akan anda gunakan mengutamakan  nilai-nilai suatu variabel yang diatur secara periodesasi?
+    " %>
+    <hr class=colorgraph>
+    <%= f.input :variabel_bebas, label: "Apakah metode peramalan yang akan anda gunakan mengutamakan variasi variabel (variabel x (bebas) dan y (terikat))?
+    " %>
+    <div class="form-actions">
+      <%= f.button :submit, "Lanjut!" %>
+    </div>
+    <% end %>
+  </div>
 </div>
-<% end %>

@@ -1,12 +1,22 @@
-<%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1 class="panel-title">Step 3 (づ｡◕‿‿◕｡)づ
+    (Silahkan pilih kriteria terkait dari salah satu grup)
+    </h1>
+  </div>
+  <div class="panel-body">
+    <%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
 
-<%= f.input :imbalan_koresponden, label: "Apakah metode peramalan yang akan anda gunakan memberikan imbalan pada koresponden?
-" %>
-<%= f.input :memperagakan_kegiatan, label: "Apakah metode peramalan yang akan anda gunakan menirukan atau memperagakan kegiatan berbagai macam proses atau fasilitas yang ada di dunia nyata (buatan) ?
-" %>
-<%= f.input :praktek, label: "Apakah metode peramalan yang akan anda gunakan secara rill dipraktekkan di segmen pasar yang terkait?
-" %>
-<div class="form-actions">
-  <%= f.button :submit, "Lanjut!" %>
+    <%= f.input :imbalan_koresponden, label: "Apakah metode peramalan yang akan anda gunakan memberikan imbalan pada koresponden?
+    " %>
+    <%= f.input :memperagakan_kegiatan, label: "Apakah metode peramalan yang akan anda gunakan menirukan atau memperagakan kegiatan berbagai macam proses atau fasilitas yang ada di dunia nyata (buatan) ?
+    " %>
+    <hr class=colorgraph>
+    <%= f.input :praktek, label: "Apakah metode peramalan yang akan anda gunakan secara rill dipraktekkan di segmen pasar yang terkait?
+    " %>
+    <div class="form-actions">
+      <%= f.button :submit, "Lanjut!" %>
+    </div>
+    <% end %>
+  </div>
 </div>
-<% end %>

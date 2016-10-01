@@ -1,11 +1,21 @@
-<%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
-<%= f.input :kuesioner, label: "Apakah metode peramalan yang akan anda gunakan menggunakan kuesioner sebagai pengumpulan data?
-" %>
-<%= f.input :alat_interview, label: "Apakah metode peramalan yang akan anda gunakan menggunakan alat interview atau daftar pertanyaan untuk responden?
-" %>
-<%= f.input :uji_coba, label: "Apakah metode peramalan yang akan anda membutuhkan uji coba pada segmen pasar tertentu?
-" %>
-<div class="form-actions">
-  <%= f.button :submit, "Lanjut!" %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1 class="panel-title">Step 2 (づ｡◕‿‿◕｡)づ
+    (Silahkan pilih kriteria terkait dari salah satu grup)
+    </h1>
+  </div>
+  <div class="panel-body">
+    <%= simple_form_for(@mataharinya, url: wizard_path, :method => :put) do |f| %>
+    <%= f.input :kuesioner, label: "Apakah metode peramalan yang akan anda gunakan menggunakan kuesioner sebagai pengumpulan data?
+    " %>
+    <%= f.input :alat_interview, label: "Apakah metode peramalan yang akan anda gunakan menggunakan alat interview atau daftar pertanyaan untuk responden?
+    " %>
+    <hr class=colorgraph>
+    <%= f.input :uji_coba, label: "Apakah metode peramalan yang akan anda membutuhkan uji coba pada segmen pasar tertentu?
+    " %>
+    <div class="form-actions">
+      <%= f.button :submit, "Lanjut!" %>
+    </div>
+    <% end %>
+  </div>
 </div>
-<% end %>
