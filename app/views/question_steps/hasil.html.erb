@@ -1,0 +1,29 @@
+<% if @mataharinya.variabel_bebas? %>
+  <%= render 'hasils/regresi' %>
+
+<% elsif @mataharinya.dua_variabel_keputusan? || @mataharinya.linier_programming? %>
+  <%= render 'hasils/grafik' %>
+
+<% elsif @mataharinya.garis_lurus? || @mataharinya.garis_tren? %>
+  <%= render 'hasils/proyeksi_tren' %>
+
+<% elsif @mataharinya.populasi_objek? %>
+  <%= render 'hasils/survei_lengkap' %>
+
+<% elsif @mataharinya.banyak_staff? || @mataharinya.kemampuan_analisis? %>
+  <%= render 'hasils/survei_delphi' %>
+
+<% elsif @mataharinya.wawancara_langsung? || @mataharinya.opini_masyarakat? %>
+  <%= render 'hasils/survei_opini' %>
+
+<% elsif @mataharinya.waktu_singkat? || @mataharinya.sebagian_objek? %>
+  <%= render 'hasils/survei_sample' %>
+
+<% elsif @mataharinya.memperagakan_kegiatan? || @mataharinya.imbalan_koresponden? %>
+  <%= render 'hasils/simulasi_pasar' %>
+
+<% elsif @mataharinya.praktek? %>
+  <%= render 'hasils/uji_pasar' %>
+<% end %>
+
+<%= link_to 'Kembali Ke awal', root_path %>

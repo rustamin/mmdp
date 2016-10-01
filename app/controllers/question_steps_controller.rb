@@ -1,9 +1,13 @@
 class QuestionStepsController < ApplicationController
   include Wicked::Wizard
-  steps :step_1, :step_2a, :step_2b, :step_3a, :step_3b, :step_3c
+  steps :step_1, :step_2, :step_3, :hasil
 
   def show
     @mataharinya = Mataharinya.find(params[:matahari_id])
+    case step
+    when :step_3
+      skip_step if @mataharinya.variabel_bebas?
+    end
     render_wizard
   end
 

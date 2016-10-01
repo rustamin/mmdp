@@ -1,0 +1,7 @@
+<% if @mataharinya.waktu? || @mataharinya.periodisasi? %>
+  <%= render 'question_steps/step_3a' %>
+<% elsif @mataharinya.kuesioner? ||  @mataharinya.alat_interview? %>
+  <%= render 'question_steps/step_3b' %>
+<% elsif @mataharinya.uji_coba? %>
+  <%= render 'question_steps/step_3c' %>
+<% end %>

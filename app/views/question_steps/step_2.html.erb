@@ -1,0 +1,5 @@
+<% if @mataharinya.model_persamaan? || @mataharinya.data_historis? || @mataharinya.variable? %>
+  <%= render 'question_steps/step_2a' %>
+<% elsif @mataharinya.intuisi? ||  @matahrinya.subjektif? %>
+  <%= render 'question_steps/step_2b' %>
+<% end %>
