@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20161001103235) do
     t.boolean  "uji_coba"
     t.boolean  "dua_variabel_keputusan"
     t.boolean  "linier_programming"
+    t.boolean  "garis_tren"
+    t.boolean  "garis_lurus"
     t.boolean  "populasi_objek"
     t.boolean  "banyak_staff"
     t.boolean  "kemampuan_analisis"
@@ -41,8 +43,6 @@ ActiveRecord::Schema.define(version: 20161001103235) do
     t.boolean  "praktek"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
-    t.boolean  "garis_tren"
-    t.boolean  "garis_lurus"
     t.string   "judul"
   end
 

@@ -16,5 +16,9 @@ Rails.application.routes.draw do
   get  '/survei_sample',     to: 'static_pages#survei_sample'
   get  '/simulasi_pasar',    to: 'static_pages#simulasi_pasar'
   get  '/uji_pasar',         to: 'static_pages#uji_pasar'
+  get  '/tentang',         to: 'static_pages#about'
+
+
+  get  '/hasil1',         to: 'hasil#_grafik'
 
 end
