@@ -1,11 +1,19 @@
-<%= simple_form_for(@mataharinya) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :judul, label: "Judul Kasus" %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1 class="panel-title">Matahari Market Development Program 2.0 (づ｡◕‿‿◕｡)づ
+    </h1>
   </div>
+  <div class="panel-body">
+    <%= simple_form_for(@mataharinya) do |f| %>
+      <%= f.error_notification %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+      <div class="form-inputs">
+        <%= f.input :judul, label: "Judul Kasus" %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit, 'Lanjut!' %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
